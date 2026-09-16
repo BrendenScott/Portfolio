@@ -387,7 +387,6 @@ body, html {
 
 .article-screen {
     padding: 40px;
-    cursor: auto;
 }
 
 .article-content {
@@ -438,8 +437,6 @@ body, html {
     }
 }
 
-/* --- CURSOR FIXES --- */
-/* 1. Force the native mouse to hide on all interactive monitors (links) */
 .monitor-bezel,
 .monitor-bezel .terminal-text,
 .monitor-bezel .screen-data {
