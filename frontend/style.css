@@ -445,12 +445,3 @@ body, html {
 .monitor-bezel .screen-data {
     cursor: none !important;
 }
-
-/* 2. RESTORE the native mouse specifically for the reading screens (Dossier & PDF) */
-.static-screen,
-.static-screen .terminal-text,
-.static-screen .screen-data,
-.static-screen .article-text,
-.static-screen .article-header {
-    cursor: auto !important; 
-}
