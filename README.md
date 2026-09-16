@@ -1,6 +1,10 @@
 # Portfolio Via Azure
 
+[![Website](https://img.shields.io/badge/Website-brendenscott.cloud-blue?style=for-the-badge)](https://brendenscott.cloud)
+
 A fully automated, serverless personal portfolio website hosted on Microsoft Azure. Fully automated via GitHub Actions and Terraform and features an API-driven visitor counter.
+
+<img src="images\Website_Screenshot.png" alt="Portfolio Screenshot" width="800">
 
 This project is built using the principles of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/).
 
@@ -9,6 +13,8 @@ This project is built using the principles of the [Cloud Resume Challenge](https
 Building this project involved navigating several challenges. You can read my full write-up on the troubleshooting process and what I learned here: [PROJECT_JOURNAL.md](PROJECT_JOURNAL.md)
 
 ## 🏗️ Architecture Overview
+
+<img src="images\Portfolio Via Azure.drawio.png" alt="Architecture Diagram" width="800">
 
 - **Frontend:** HTML/CSS/JS hosted on an **Azure Static Web App (SWA)**.
 - **Backend/API:** A Serverless **Python Azure Function** (v2 programming model) that interacts with the database.
@@ -108,7 +114,7 @@ If you want to use a custom domain:
 3. Update `infra/terraform.tfvars` to set `enable_custom_domain = true` and enter the address of your domain into the variable **custom_domain_name**.
 4. Push the change to trigger the **Deploy Backend** workflow, which will finalize the custom domain binding via Terraform.
 
-### 6. Automaticaly Trigger Github Actions on Push (Optional)
+### 6. Automatically Trigger Github Actions on Push (Optional)
 1. Open `.github/workflows/deploy-backend.yml` and `.github/workflows/deploy-frontend.yml`. Update the `if: github.repository == 'BrendenScott/Portfolio'` line to match your own GitHub username and repository name.
 
 ## 💻 Local Development
